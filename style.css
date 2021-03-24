@@ -8,10 +8,55 @@ h1 {
 	font-size: 30pt;
 }
 div {
+}
+.main_block {
+	margin: 0px auto;
+	max-width: 1024px;
+}
+.grid_container {
+	display: grid;
+	margin: 0px;
+	grid-template-columns: 256px auto;
+	grid-template-rows: auto auto;
+	align-content: start;
+	grid-column-gap: 40px;
+	grid-row-gap: 24px;
+}
+.portrait {
+	grid-column: 1;
+	grid-row: 1;
+	margin: 0px;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.8), 0px 5px 40px rgba(255, 0, 0, 1);
+}
+.button {
+	grid-column: 1;
+	padding: 8px 10px;
+	font-size: 20px;
+	border-radius: 4px;
+	background-image: url(button.png);
+	transition-duration: 0.1s;
+	color: #ffffff;
+	text-decoration: none;
+}
+.button:hover {
+	filter: brightness(180%);
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: normal;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.8), 0px 0px 20px rgba(255, 0, 0, 1);
+}
+p.button_text {
+	margin: 0px;
+}
+.main_text {
+	grid-column: 2;
+	grid-row: 1 / 4;
 	background-color: #ffffff;
-	margin: auto;
-	width: 1000px;
-	padding: 50px;
+	margin: 0px;
+	padding: 25px;
 	color: #000000;
-	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.8), 0px 10px 40px rgba(255, 0, 0, 1);
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.8), 0px 5px 40px rgba(255, 0, 0, 1);
+}
+.footer {
+
 }
