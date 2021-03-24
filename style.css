@@ -1,9 +1,17 @@
 body {
-  font-family: 'Times New Roman';
-  font-size: 14pt;
-  background-color: #0f0fff;
-  color: #000000;
+	font-family: 'Calibri';
+	font-size: 14pt;
+	background-color: #000000;
+	color: #ffffff;
 }
 h1 {
-  font-size: 30pt;
+	font-size: 30pt;
+}
+div {
+	background-color: #ffffff;
+	margin: auto;
+	width: 1000px;
+	padding: 50px;
+	color: #000000;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.8), 0px 10px 40px rgba(255, 0, 0, 1);
 }
