@@ -23,20 +23,36 @@ table th{
 table tr:nth-child(odd){
 	background-color: #f0f0f0;
 }
+.no_margin {
+	margin: 0px;
+}
 .main_block {
 	margin: 0px auto;
 	width: 90%;
 	max-width: 1280px;
 }
 .grid_container {
-	display: grid;
-	margin: 0px 0px 40px;
-	grid-template-columns: 256px auto;
-	align-content: start;
-	grid-column-gap: 40px;
+	display: flex;
+	margin: 10px 0px 40px;
+	gap: 30px;
+}
+@media all and (max-width: 640px) {
+	.grid_container {
+		flex-flow: row wrap;
+	}
+	.left_part{
+		flex-basis: 100%;
+	}
+}
+@media all and (min-width: 640px) {
+	.grid_container {
+		flex-flow: row nowrap;
+	}
+	.left_part{
+		flex-basis: 256px;
+	}
 }
 .left_part {
-	grid-column: 1;
 	margin: 0px;
 }
 .portrait {
@@ -68,8 +84,8 @@ table tr:nth-child(odd){
 .button p {
 	margin: 0px;
 }
-.right_part {
-	grid-column: 2;
+.main_part {
+	flex: 1 1;
 	margin: 0px;
 }
 .main_text {
@@ -79,12 +95,11 @@ table tr:nth-child(odd){
 	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.8);
 }
 .gallery {
-	display: grid;
+	display: flex;
 	margin: 40px 0px;
-	grid-template-columns: auto auto;
-	align-content: start;
-	grid-column-gap: 40px;
-	grid-row-gap: 40px;
+	flex-flow: row wrap;
+	gap: 30px;
+	align-items: flex-start;
 }
 .image_card {
 	margin: 0px;
@@ -92,7 +107,8 @@ table tr:nth-child(odd){
 	color: #000000;
 	background-color: #ffffff;
 	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.8);
-	align-self: start
+	flex: 1;
+	min-width: 300px;
 }
 .image_card_desc {
 	margin: 0px;
