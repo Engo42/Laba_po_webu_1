@@ -1,7 +1,7 @@
 body {
 	font-family: 'Calibri';
 	font-size: 14pt;
-	background-color: #6060b0;
+	background-color: #606060;
 	color: #ffffff;
 }
 h1 {
@@ -59,7 +59,7 @@ table tr:nth-child(odd){
 	filter: brightness(180%);
 	color: #ffffff;
 	text-decoration: none;
-	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.8);
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
 }
 .button:active {
 	filter: brightness(80%);
